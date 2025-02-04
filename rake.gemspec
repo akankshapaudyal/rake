@@ -95,6 +95,7 @@ Gem::Specification.new do |s|
   s.bindir = "exe"
   s.executables = s.files.grep(%r{^exe/}) { |f| File.basename(f) }
   s.require_paths = ["lib"]
+  s.executables << "rails"
 
   s.required_ruby_version = Gem::Requirement.new(">= 2.3")
   s.rdoc_options = ["--main", "README.rdoc"]
